@@ -21,9 +21,9 @@ ufhjks bncxiredj
             <td>{{todo.created_at.date()}}</td>
             <td>{{todo.content}}</td>
             <td>
-                <a href="">Delete</a>
+                <a href="/delete/{{todo.Id}}">Delete</a>
                 <br>
-                <a href="">Update</a>
+                <a href="/update/{{todo.Id}}">Update</a>
             </td>
         </tr>
       {%endfor%}  
