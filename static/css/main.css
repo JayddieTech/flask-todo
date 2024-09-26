@@ -1,0 +1,51 @@
+/* body{
+    color: white;
+    background-color: lightblue;
+} */
+
+/* Center the table on the page */
+table {
+    width: 80%;
+    margin: 50px auto; /* Centers the table horizontally */
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Styling for the table header */
+table th {
+    background-color: #4CAF50; /* Green background for headers */
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* Styling for table data cells */
+table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+    color: #333;
+}
+
+/* Alternating row colors for better readability */
+table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light gray for even rows */
+}
+
+/* Hover effect on table rows */
+table tr:hover {
+    background-color: #ddd; /* Darker gray on hover */
+}
+
+/* Add spacing between table rows */
+table tr {
+    height: 50px;
+}
+
+/* Make the first column bold */
+table td:first-child {
+    font-weight: bold;
+}

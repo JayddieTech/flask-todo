@@ -1,0 +1,38 @@
+{%extends "base.html"%}
+{% block head%}
+ufhjks bncxiredj
+{%endblock%}
+{%block main %}
+<h1>i love sharkz</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>add</th>
+            <th>content</th>
+            <th>Actions</th>
+        </tr>
+    </thead> 
+    <tbody>
+      {%for todo in todos%}  
+        <tr>
+            <td>{{todo.Id}}</td>
+            <td>{{todo.created_at.date()}}</td>
+            <td>{{todo.content}}</td>
+            <td>
+                <a href="">Delete</a>
+                <br>
+                <a href="">Update</a>
+            </td>
+        </tr>
+      {%endfor%}  
+    </tbody>
+</table>
+
+<form action="/" method="POST">
+    <input type="text" name="content" id="content"/>
+    <button type="submit">add Task</button>
+</form>
+
+{%endblock%}
